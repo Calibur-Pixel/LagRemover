@@ -1,34 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "lagremover",
+  "version": "1.0.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Lag Remover",
+  "description": "Remove the lag caused by the player's head block.",
   "authors": [
-    "Me!"
+    "Margele"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Calibur-Pixel",
+	"source": "https://github.com/Calibur-Pixel/LagRemover",
+	"issues": "https://github.com/Calibur-Pixel/LagRemover/issues"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/calibur/calibur.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "tv.calibur.lagremover.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "LagRemover.mixins.json"
   ],
-
+  "custom": {
+    "modmenu:clientsideOnly": true
+  },
   "depends": {
     "fabricloader": ">=0.7.4",
-    "fabric": "*",
     "minecraft": "1.15.x"
   },
   "suggests": {

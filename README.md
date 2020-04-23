@@ -1,9 +1,4 @@
-# Fabric Example Mod
+# Lag Remover
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## 用途
+用于修复Minecraft在主线程获取头颅皮肤导致Minecraft卡死5秒的Bug。不确定在其他国家也有这个问题。
